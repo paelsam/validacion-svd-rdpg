@@ -1,0 +1,49 @@
+[project]
+name = "svd-polarization-python"
+version = "0.1.0"
+description = "A Python package for analyzing polarization using SVD and finding embedding dimensions"
+license = "MIT"
+authors = [
+    { name = "Elkin Angulo", email = "elkinsamir643@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+
+keywords = [
+    "SVD",
+    "Polarization",
+    "Embedding Dimensions",
+    "Data Analysis",
+    "Social Networks"
+]
+
+dependencies = [
+    "networkx >=3.5,<4.0",
+    "numpy >=1.26.4,<2.0.0",
+    "scipy >=1.7.0,<1.14.0",
+    "matplotlib >=3.10.6,<4.0.0",
+    "seaborn >=0.13.2,<0.14.0",
+    "notebook >=7.4.5,<8.0.0",
+    "jupyterlab >=4.4.6,<5.0.0",
+    "scikit-learn >=1.7.2,<2.0.0",
+    "pyrefly >=0.34.0,<0.35.0",
+    "polars >=1.34.0,<2.0.0",
+    "pyarrow >=21.0.0,<22.0.0",
+    "python-louvain (>=0.16,<0.17)",
+    "graspologic (>=3.4.4,<4.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.pyrefly]
+project-includes = ["**/*"]
+project-excludes = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/*venv/**/*",
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
